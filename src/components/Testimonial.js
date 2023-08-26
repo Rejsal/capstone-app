@@ -1,38 +1,33 @@
-import ProductCard from "./common/ProductCard";
-import GreekSalad from "../assets/greeksalad.jpg";
+import Customer1 from "../assets/customer-1.jpg";
+import Customer2 from "../assets/customer-2.jpg";
+import Customer3 from "../assets/customer-3.jpg";
+import Customer4 from "../assets/customer-4.jpg";
+import TestimonialCard from "./common/TestimonialCard";
 
 const DATA = [
   {
     id: 1,
-    image: GreekSalad,
-    title: "Greek salad",
-    price: 12.99,
-    description:
-      "This easy Greek salad recipe is our new favorite summer side dish! Just 7 ingredients + a simple Greek salad dressing make it refreshing & delicious.",
+    image: Customer1,
+    customer: "Hannah",
+    text: "Great dish! Delicious. Want to try again. Recommended to every one.",
   },
   {
     id: 2,
-    image: GreekSalad,
-    title: "Greek salad",
-    price: 12.99,
-    description:
-      "This easy Greek salad recipe is our new favorite summer side dish! Just 7 ingredients + a simple Greek salad dressing make it refreshing & delicious.",
+    image: Customer2,
+    customer: "John",
+    text: "Great dish! Delicious. Want to try again. Recommended to every one.",
   },
   {
     id: 3,
-    image: GreekSalad,
-    title: "Greek salad",
-    price: 12.99,
-    description:
-      "This easy Greek salad recipe is our new favorite summer side dish! Just 7 ingredients + a simple Greek salad dressing make it refreshing & delicious.",
+    image: Customer3,
+    customer: "Catherine",
+    text: "Great dish! Delicious. Want to try again. Recommended to every one.",
   },
   {
-    id: 3,
-    image: GreekSalad,
-    title: "Greek salad",
-    price: 12.99,
-    description:
-      "This easy Greek salad recipe is our new favorite summer side dish! Just 7 ingredients + a simple Greek salad dressing make it refreshing & delicious.",
+    id: 4,
+    image: Customer4,
+    customer: "Tom",
+    text: "Great dish! Delicious. Want to try again. Recommended to every one.",
   },
 ];
 
@@ -41,7 +36,7 @@ const Testimonial = () => {
     <section className="testimonial-section">
       <h1 className="testimonial-title">Testimonials</h1>
       {DATA.map((v) => (
-        <ProductCard key={v.id} {...v} />
+        <TestimonialCard key={v.id} {...v} />
       ))}
     </section>
   );

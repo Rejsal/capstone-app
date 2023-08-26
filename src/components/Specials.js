@@ -1,5 +1,7 @@
 import ProductCard from "./common/ProductCard";
 import GreekSalad from "../assets/greeksalad.jpg";
+import LemonDessert from "../assets/lemondessert.jpg";
+import Bruchetta from "../assets/bruchetta.svg";
 
 const DATA = [
   {
@@ -12,19 +14,19 @@ const DATA = [
   },
   {
     id: 2,
-    image: GreekSalad,
-    title: "Greek salad",
-    price: 12.99,
+    image: LemonDessert,
+    title: "Lemon Dessert",
+    price: 10.99,
     description:
-      "This easy Greek salad recipe is our new favorite summer side dish! Just 7 ingredients + a simple Greek salad dressing make it refreshing & delicious.",
+      "This easy Lemon Dessert is our new favorite summer side dish! Just 7 ingredients + a simple Greek salad dressing make it refreshing & delicious.",
   },
   {
     id: 3,
-    image: GreekSalad,
-    title: "Greek salad",
-    price: 12.99,
+    image: Bruchetta,
+    title: "Bruchetta",
+    price: 15.99,
     description:
-      "This easy Greek salad recipe is our new favorite summer side dish! Just 7 ingredients + a simple Greek salad dressing make it refreshing & delicious.",
+      "This easy Bruchetta is our new favorite summer side dish! Just 7 ingredients + a simple Greek salad dressing make it refreshing & delicious.",
   },
 ];
 

@@ -1,3 +1,5 @@
+import Basket from "../../assets/order.svg";
+
 const ProductCard = ({ image, title, price, description }) => {
   return (
     <div className="product-card">
@@ -8,7 +10,10 @@ const ProductCard = ({ image, title, price, description }) => {
           <h3 className="product-price">$ {price}</h3>
         </div>
         <p className="product-description">{description}</p>
-        <h3>Order a delivery</h3>
+        <div className="product-order">
+          <img className="product-order-img" src={Basket} alt="Product Order" />
+          <h3 className="product-order-title">Order a delivery</h3>
+        </div>
       </div>
     </div>
   );
