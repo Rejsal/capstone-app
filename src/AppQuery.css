@@ -1,0 +1,65 @@
+@media (max-width: 68.75rem) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .reserve-form-section {
+        grid-template-columns: 1fr;
+    }
+
+    .reserve-form {
+        padding: 5rem 5rem;
+    }
+
+    .grid--footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-heading {
+        margin-top: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-img {
+        transform: none;
+        justify-self: unset;
+        margin-top: 2.2rem;
+    }
+
+    .specials-section {
+        grid-template-columns: 1fr;
+    }
+
+    .specials-title {
+        grid-column: unset;
+    }
+
+    .specials-btn {
+        justify-self: unset;
+    }
+
+    .testimonial-section {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-title {
+        grid-column: unset;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+    }
+
+    .about-side {
+        justify-self: unset;
+        margin-top: 2.2rem;
+    }
+}
