@@ -2,6 +2,7 @@ import ProductCard from "./common/ProductCard";
 import GreekSalad from "../assets/greeksalad.jpg";
 import LemonDessert from "../assets/lemondessert.jpg";
 import Bruchetta from "../assets/bruchetta.svg";
+import { useNavigate } from "react-router-dom";
 
 const DATA = [
   {
@@ -31,10 +32,19 @@ const DATA = [
 ];
 
 const Specials = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="specials-section">
       <h1 className="specials-title">This weeks specials</h1>
-      <button className="specials-btn">Online Menu</button>
+      <button
+        onClick={() => {
+          navigate("/online-menu");
+        }}
+        className="specials-btn"
+      >
+        Online Menu
+      </button>
       {DATA.map((v) => (
         <ProductCard key={v.id} {...v} />
       ))}

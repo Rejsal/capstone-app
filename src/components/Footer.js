@@ -1,28 +1,32 @@
 import Logo from "../assets/Logo.svg";
+import Facebook from "../assets/facebook.svg";
+import Twitter from "../assets/twitter.svg";
+import Instagram from "../assets/instagram.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer class="footer">
       <div class="container grid grid--footer">
         <div class="logo-col">
-          <a href="#" class="footer-logo">
+          <Link to="/" class="footer-logo">
             <img class="logo" alt="Logo" src={Logo} />
-          </a>
+          </Link>
 
           <ul class="social-links">
             <li>
               <a class="footer-link" href="https://www.instagram.com">
-                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                <img src={Instagram} class="social-icon" alt="logo-instagram" />
               </a>
             </li>
             <li>
               <a class="footer-link" href="https://www.facebook.com">
-                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                <img src={Facebook} class="social-icon" alt="logo-facebook" />
               </a>
             </li>
             <li>
               <a class="footer-link" href="https://www.twitter.com">
-                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                <img src={Twitter} class="social-icon" alt="logo-twitter" />
               </a>
             </li>
           </ul>
@@ -52,24 +56,24 @@ const Footer = () => {
           <p class="footer-heading">Account</p>
           <ul class="footer-nav">
             <li>
-              <a class="footer-link" href="#">
+              <Link class="footer-link" to="/not-found">
                 Create account
-              </a>
+              </Link>
             </li>
             <li>
-              <a class="footer-link" href="#">
+              <Link class="footer-link" to="/not-found">
                 Sign in
-              </a>
+              </Link>
             </li>
             <li>
-              <a class="footer-link" href="#">
+              <Link class="footer-link" to="/not-found">
                 iOS app
-              </a>
+              </Link>
             </li>
             <li>
-              <a class="footer-link" href="#">
+              <Link class="footer-link" to="/not-found">
                 Android app
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -78,24 +82,24 @@ const Footer = () => {
           <p class="footer-heading">Company</p>
           <ul class="footer-nav">
             <li>
-              <a class="footer-link" href="#">
+              <Link class="footer-link" to="/not-found">
                 About Little Lemon
-              </a>
+              </Link>
             </li>
             <li>
-              <a class="footer-link" href="#">
+              <Link class="footer-link" to="/not-found">
                 For Business
-              </a>
+              </Link>
             </li>
             <li>
-              <a class="footer-link" href="#">
+              <Link class="footer-link" to="/not-found">
                 Cooking partners
-              </a>
+              </Link>
             </li>
             <li>
-              <a class="footer-link" href="#">
+              <Link class="footer-link" to="/not-found">
                 Careers
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -104,19 +108,19 @@ const Footer = () => {
           <p class="footer-heading">Resources</p>
           <ul class="footer-nav">
             <li>
-              <a class="footer-link" href="#">
+              <Link class="footer-link" to="/not-found">
                 Recipe directory{" "}
-              </a>
+              </Link>
             </li>
             <li>
-              <a class="footer-link" href="#">
+              <Link class="footer-link" to="/not-found">
                 Help center
-              </a>
+              </Link>
             </li>
             <li>
-              <a class="footer-link" href="#">
+              <Link class="footer-link" to="/not-found">
                 Privacy & terms
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

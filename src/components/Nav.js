@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const MENU = [
   {
-    id: "home",
+    id: "",
     title: "Home",
   },
   {
@@ -31,7 +33,7 @@ const Nav = () => {
       <ul>
         {MENU.map((v) => (
           <li key={v.id} className="nav-menu">
-            <a href={`#${v.id}`}>{v.title}</a>
+            <Link to={`/${v.id}`}>{v.title}</Link>
           </li>
         ))}
       </ul>
