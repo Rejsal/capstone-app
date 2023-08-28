@@ -444,21 +444,3 @@
  .not-found {
    padding: 6rem 16rem;
  }
-
- @media (max-width: 68.75rem) {
-   header {
-     flex-direction: column;
-   }
-
-   nav ul {
-     flex-direction: column;
-   }
-
-   .reserve-form-section {
-     grid-template-columns: 1fr;
-   }
-
-   .reserve-form {
-     padding: 5rem 5rem;
-   }
- }

@@ -1,9 +1,9 @@
 const TestimonialCard = ({ image, text, customer }) => {
   return (
-    <figure class="testimonial-card">
+    <figure className="testimonial-card">
       <img className="testimonial-img" src={image} alt="Testimonial" />
-      <blockquote class="testimonial-text">{text}</blockquote>
-      <p class="testimonial-name">&mdash; {customer}</p>
+      <blockquote className="testimonial-text">{text}</blockquote>
+      <p className="testimonial-name">&mdash; {customer}</p>
     </figure>
   );
 };
